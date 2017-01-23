@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC450644-0882-483C-94E7-0CD78F769974}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FIDO.Threatfeeds</RootNamespace>
+    <AssemblyName>FIDO.Threatfeeds</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RabbitMQ.Client, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89e7d7c5feba84ce, processorArchitecture=MSIL">
+      <HintPath>..\packages\RabbitMQ.Client.4.0.2\lib\net451\RabbitMQ.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.1.0\lib\net452\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FIDO.Support\API.Endpoints\APIEndpoints.cs" />
+    <Compile Include="FIDO.Support\API.Endpoints\ApiEndpointsClass.cs" />
+    <Compile Include="FIDO.Support\ErrorHandling\FidoEventHandler.cs" />
+    <Compile Include="FIDO.Support\Etc\GeoIpObject.cs" />
+    <Compile Include="FIDO.Support\Etc\MatrixHistoricalHelper.cs" />
+    <Compile Include="FIDO.Support\Etc\CarbonBlackInventoryClass.cs" />
+    <Compile Include="FIDO.Support\Etc\CouchDbAlertId.cs" />
+    <Compile Include="FIDO.Support\Etc\CyphortClass.cs" />
+    <Compile Include="FIDO.Support\Etc\DDI.cs" />
+    <Compile Include="FIDO.Support\Etc\F5Vpn.cs" />
+    <Compile Include="FIDO.Support\Etc\F5VpnInventory.cs" />
+    <Compile Include="FIDO.Support\Etc\JamfReturnValues.cs" />
+    <Compile Include="FIDO.Support\Etc\ObjectFidoConfigsCouchDbIntegrations.cs" />
+    <Compile Include="FIDO.Support\Etc\ProtectWiseThreatConfigClass.cs" />
+    <Compile Include="FIDO.Support\Etc\SentinelOneAlertClass.cs" />
+    <Compile Include="FIDO.Support\Etc\SentinelOneInventoryClass.cs" />
+    <Compile Include="FIDO.Support\Event.Queue\EventQueue.cs" />
+    <Compile Include="FIDO.Support\Event.Queue\EventQueueClass.cs" />
+    <Compile Include="FIDO.Support\FidoDB\FidoCouchDb.cs" />
+    <Compile Include="FIDO.Support\FidoDB\FidoReturnValues.cs" />
+    <Compile Include="FIDO.Support\Hashing\Base64.cs" />
+    <Compile Include="FIDO.Support\Notification\EmailSend.cs" />
+    <Compile Include="FIDO.Support\Notification\FidoEmailServerConfigs.cs" />
+    <Compile Include="FIDO.Support\Notification\FidoEmailConfigs.cs" />
+    <Compile Include="FIDO.Support\RabbitMQ\GetRabbit.cs" />
+    <Compile Include="FIDO.Support\RabbitMQ\GetRabbitEnum.cs" />
+    <Compile Include="FIDO.Support\RabbitMQ\RabbitMQClass.cs" />
+    <Compile Include="FIDO.Support\RabbitMQ\PostRabbit.cs" />
+    <Compile Include="FIDO.Support\Rest\FidoRestConnection.cs" />
+    <Compile Include="FIDO.Support\Threat.Feeds\CurrentDetector.cs" />
+    <Compile Include="FIDO.Support\Threat.Feeds\DetectorEnum.cs" />
+    <Compile Include="FIDO.Support\Threat.Feeds\FeedsAlientVault.cs" />
+    <Compile Include="FIDO.Support\Threat.Feeds\FeedsOpenDNS.cs" />
+    <Compile Include="FIDO.Support\Threat.Feeds\FeedsThreatGRID.cs" />
+    <Compile Include="FIDO.Support\Threat.Feeds\FeedsVirusTotal.cs" />
+    <Compile Include="FIDO.Support\Threat.Feeds\FeedsWildfire.cs" />
+    <Compile Include="FIDO.Support\Threat.Feeds\FidoOpenDnsClass.cs" />
+    <Compile Include="FIDO.Support\Threat.Feeds\NiddelClass.cs" />
+    <Compile Include="FIDO.Support\Threat.Feeds\OpenDNSClass.cs" />
+    <Compile Include="FIDO.Support\Threat.Feeds\ThreatFeedEnum.cs" />
+    <Compile Include="FIDO.Support\Threat.Feeds\ThreatGridIpConfigClass.cs" />
+    <Compile Include="FIDO.Support\Threat.Feeds\ThreatGridSearchConfigClass.cs" />
+    <Compile Include="FIDO.Support\Threat.Feeds\ThreatGridThreatConfigClass.cs" />
+    <Compile Include="FIDO.Support\Threat.Feeds\OpenDNSType.cs" />
+    <Compile Include="FIDO.Support\Threat.Feeds\ThreatArtifactEnum.cs" />
+    <Compile Include="FIDO.Support\Threat.Feeds\ThreatFeedsHash.cs" />
+    <Compile Include="FIDO.Support\Threat.Feeds\ThreatFeedsNetwork.cs" />
+    <Compile Include="FIDO.Support\Threat.Feeds\FidoVirusTotal.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\AccessDeniedException.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\DetectedUrl.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\DomainReport.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\FileReport.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\HashHelper.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\InvalidResourceException.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\IPReport.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\IPReportResponseCode.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\Object_Event_Queue.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\RateLimitException.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\ReportResponseCode.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\Resolution.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\ResourceLimitException.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\Sample.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\ScanEngine.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\ScanResponseCode.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\ScanResult.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\SizeLimitException.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\UnixTimeHelper.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\UrlReport.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\VirusTotal.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\WebutationInfo.cs" />
+    <Compile Include="FIDO.Support\VirusTotal.NET\WotInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FIDO.Support\Etc\SerializeJson.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIDO.Threatfeeds", "FIDO.Threatfeeds\FIDO.Threatfeeds.csproj", "{DC450644-0882-483C-94E7-0CD78F769974}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIDO.Threatfeeds.VirusTotal", "..\FIDO.Threatfeeds.VirusTotal\FIDO.Threatfeeds.VirusTotal.csproj", "{C35819C0-DF6B-4970-B7BA-121D295507FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIDO.Threatfeeds.ThreatGRID", "..\FIDO.Threatfeeds.ThreatGRID\FIDO.Threatfeeds.ThreatGRID.csproj", "{45B0C835-0679-4B39-AF0D-FC3899908EE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIDO.Threatfeeds.OpenDNS", "..\FIDO.Threatfeeds.OpenDNS\FIDO.Threatfeeds.OpenDNS.csproj", "{290F7516-62D9-4A87-8B39-DF2AC5943801}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIDO.Threatfeeds.Wildfire", "..\FIDO.Threatfeeds.Wildfire\FIDO.Threatfeeds.Wildfire.csproj", "{E0E209A8-90EE-4712-B688-4B7EC4781C29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIDO.Threatfeeds.Seclytics", "..\FIDO.Threatfeeds.Seclytics\FIDO.Threatfeeds.Seclytics.csproj", "{5A925146-E01D-419C-A950-BA4363D32C96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIDO.Threatfeeds.Niddel", "..\FIDO.Threatfeeds.Niddel\FIDO.Threatfeeds.Niddel.csproj", "{BE524314-CA01-4CB3-83FA-729DCFA3DF98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC450644-0882-483C-94E7-0CD78F769974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC450644-0882-483C-94E7-0CD78F769974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC450644-0882-483C-94E7-0CD78F769974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC450644-0882-483C-94E7-0CD78F769974}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C35819C0-DF6B-4970-B7BA-121D295507FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C35819C0-DF6B-4970-B7BA-121D295507FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C35819C0-DF6B-4970-B7BA-121D295507FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C35819C0-DF6B-4970-B7BA-121D295507FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45B0C835-0679-4B39-AF0D-FC3899908EE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45B0C835-0679-4B39-AF0D-FC3899908EE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45B0C835-0679-4B39-AF0D-FC3899908EE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45B0C835-0679-4B39-AF0D-FC3899908EE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{290F7516-62D9-4A87-8B39-DF2AC5943801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{290F7516-62D9-4A87-8B39-DF2AC5943801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{290F7516-62D9-4A87-8B39-DF2AC5943801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{290F7516-62D9-4A87-8B39-DF2AC5943801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0E209A8-90EE-4712-B688-4B7EC4781C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0E209A8-90EE-4712-B688-4B7EC4781C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0E209A8-90EE-4712-B688-4B7EC4781C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0E209A8-90EE-4712-B688-4B7EC4781C29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A925146-E01D-419C-A950-BA4363D32C96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A925146-E01D-419C-A950-BA4363D32C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A925146-E01D-419C-A950-BA4363D32C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A925146-E01D-419C-A950-BA4363D32C96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE524314-CA01-4CB3-83FA-729DCFA3DF98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE524314-CA01-4CB3-83FA-729DCFA3DF98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE524314-CA01-4CB3-83FA-729DCFA3DF98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE524314-CA01-4CB3-83FA-729DCFA3DF98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
